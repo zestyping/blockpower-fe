@@ -73,7 +73,7 @@ export default ({ user, stateOptions, onStateSelected }) => {
             items={stateOptions}
             titleText="State*"
             selectedItem={user.address?.state}
-            onChange={(e) => { stateRef.current.value = e.target.selectedItem; }}
+            onChange={(e) => { stateRef.current.value = e.selectedItem; }}
             required
           />
           <input name="state" type="hidden" value={user.address?.state} ref={stateRef} />
