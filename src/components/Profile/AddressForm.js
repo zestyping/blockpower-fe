@@ -72,7 +72,7 @@ export default ({ user, stateOptions, onStateSelected }) => {
             name="state"
             items={stateOptions}
             titleText="State*"
-            selectedItem={user.address?.state}
+            initialSelectedItem={user.address?.state}
             onChange={(e) => { stateRef.current.value = e.selectedItem; }}
             required
           />
